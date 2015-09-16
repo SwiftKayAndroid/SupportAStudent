@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/supportlogo"
+        android:layout_marginTop="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btnstudent"
+        android:layout_alignStart="@+id/btnstudent"
+        android:layout_alignRight="@+id/btnstudent"
+        android:layout_alignEnd="@+id/btnstudent" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I&apos;m a supporter"
+        android:id="@+id/btnsupporter"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bluebuttonbackground"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I&apos;m a student"
+        android:id="@+id/btnstudent"
+        android:layout_above="@+id/btnsupporter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/bluebuttonbackground"
+        android:layout_marginBottom="15dp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student sign in"
+        android:id="@+id/btnsignin"
+        android:background="@drawable/bluebuttonbackground"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/btnstudent"
+        android:layout_alignStart="@+id/btnstudent"
+        android:layout_alignRight="@+id/btnstudent"
+        android:layout_alignEnd="@+id/btnstudent"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Students sign-in"
+        android:id="@+id/textView"
+        android:layout_above="@+id/btnsignin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="or sign-up"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/btnstudent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp" />
+</RelativeLayout>
